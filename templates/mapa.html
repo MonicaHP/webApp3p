@@ -1,0 +1,26 @@
+$def with(datos)
+
+        <font face="Verdana">
+        <h1 align="center"> MAPA </h1>
+        </br>
+        </font>
+            <iframe width="100%" height="520" frameborder="0" src="https://monicahp.carto.com/viz/c0fcb920-bd27-11e6-a1fc-0e233c30368f/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>        <div align="center">
+            <table border="1" width="550">
+                <tr>
+                    <td align="center" width="140"> 
+                        <font face="Tw Cen MT" size="4"> ENTIDAD </font>
+                    </td>
+                </tr>
+                <br>
+                <font face="Tw Cen MT">
+                    <h2 align="center" > Datos </h2>
+                </font>
+                </br>
+                $for row in datos:
+                <tr>
+                    <td>
+                        <font face="Tw Cen MT" size="3"> $row['entidad'] </font>
+                    </td>
+                </tr>
+            </table>
+        </div>

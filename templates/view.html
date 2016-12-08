@@ -1,0 +1,42 @@
+$def with (post)
+<div class="row container">
+    
+    <section class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        
+        <section class="jumbotron">
+            <div class="container">
+                <h2>$post.pelicula</h2>
+            </div>   
+        </section>
+        
+        <div class="centraTabla table-responsive">
+            <a class="btn btn-primary btn-block" href="/viewdata">Regresar</a>
+                <br>
+            <table align="center" class="table table-bordered table-hover table-responsive">
+                <thead class="table-active">
+                    <tr class="active">
+                        <th> </th>
+                        <th>Pelicula</th>
+                        <th>Pais</th>
+                        <th>Año</th>
+                        <th>Genero</th>
+                        <th>Duracion</th>
+                        <th>Descripcion</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>$post.id</td>
+                        <td>$post.pelicula</td>
+                        <td>$post.pais</td>
+                        <td>$post.anio</td>
+                        <td>$post.genero</td>
+                        <td>$post.duracion</td>
+                        <td>$post.descripcion</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div> 

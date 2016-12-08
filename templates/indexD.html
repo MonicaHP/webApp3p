@@ -1,0 +1,22 @@
+$def with (form, results) 
+
+<h2 align="center"> Victimas de homicidio secuestro y extorsion </h2>
+
+<form name="main" method="post" > 
+    $if not form.valid: <p class="error">Información erronea</p>
+    $:form.render() 
+    <input type="submit" /> </form>
+    
+    <br> 
+    $if results:
+        <table align="center">
+            <th align="center"> Entidad </th>
+            <th align="center"> Delito </th>
+            <th align="center"> Año </th>
+            $for row in results:
+                <tr>
+                    <td>$row[0]</td>
+                    <td>$row[1]</td>
+                    <td>$row[2]</td>
+                </tr>
+        </table>
