@@ -23,3 +23,5 @@ INSERT INTO peliculas VALUES(1, 'Storks (Cigüeñas)', 'Estados Unidos', '2016',
 
 select * from peliculas;
 
+SELECT * FROM usuarios;
+
