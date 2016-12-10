@@ -1,53 +1,56 @@
 $def with (post)
 
-<div class="row container">
-    
-    <section>
-        
-        <section class="main container">
-        
-        <section class="jumbotron">
-            <div class="container">
-                <h2>Editar</h2>
-            </div>   
-        </section>
-        
-        <div class="container">
-            <form method="post" action="">
-                
-                <a class="btn btn-primary btn-block" href="/viewdata">Cancelar</a>
+<br>
+
+<section>
+    <div>
+        <h2 align=center >Editar</h2>
+    </div>
+
+<br>
+
+        <form method="post" action="">
+            <div>
+            <a class="myButton" href="/viewdata">Cancelar</a>
+            </div>
+
                 <br>
                 
-                <div class="form-group">
+                <div>
                     <label for="peliculaP">Pelicula:</label>
-                    <input class="form-control" type="text" value="$post.pelicula" id="peliculaP" name="peliculaP" placeholder="Pelicula">
+                    <input type="text" value="$post.pelicula" id="peliculaP" name="peliculaP" placeholder="Pelicula">
                 </div>
 
-                <div class="form-group">
+                <div>
                     <label for="paisP">Pais:</label>
-                    <input class="form-control" type="text" value="$post.pais" id="paisP" name="paisP" placeholder="Pais">
+                    <input type="text" value="$post.pais" id="paisP" name="paisP" placeholder="Pais">
                 </div>
 
-                <div class="form-group">
+                <div>
                     <label for="anioP">Año:</label>
-                    <input class="form-control" type="text" value="$post.anio" id="anioP" name="anioP" placeholder="Puntos Previos:">
+                    <input type="text" value="$post.anio" id="anioP" name="anioP" placeholder="Año">
                 </div>
 
-                <div class="form-group">
+                <div>
                     <label for="generoP">Genero:</label>
-                    <input class="form-control" type="text" value="$post.genero" id="generoP" name="generoP" placeholder="Posiciones:">
+                    <input type="text" value="$post.genero" id="generoP" name="generoP" placeholder="Genero">
                 </div>
 
-                <div class="form-group">
+                <div>
                     <label for="duracionP">Duracion:</label>
-                    <input class="form-control" type="text" value="$post.duracion" id="duracionP" name="duracionP" placeholder="Promedio 2016:">
+                    <input type="text" value="$post.duracion" id="duracionP" name="duracionP" placeholder="Duracion">
                 </div>
 
-                <div class="form-group">
+                <div>
                     <label for="descripcionP">Descripcion:</label>
-                    <input class="form-control" type="text" value="$post.descripcion" id="descripcionP" name="descripcionP" placeholder="Resultado (100%):">
+                    <input type="text" value="$post.descripcion" id="descripcionP" name="descripcionP" placeholder="Descripcion">
                 </div>
-                <input class="btn btn-primary btn-block" type="submit" value="Actualizar" />
+
+                <br>
+
+                <div>
+                <input type="submit" value="Actualizar" />
+                </div>
             </form>
         </div>
     </section>

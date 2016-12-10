@@ -15,15 +15,7 @@
 	width:230px;
 	padding:10px 0;
 }
-a{
-	color: #505961;
-	-webkit-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
-}
-a:hover{
-	color: rgb(0, 255, 153);
-}
+
 .cabecera .menu{
 	float: right;
 }
@@ -36,17 +28,17 @@ a:hover{
 .cabecera .menu ul li{
 	float: left;
 }
-.cabecera .menu ul li a{
+.cabecera .menu ul li .b{
 	padding:0 15px;
 	display:block;
 	line-height:84px;
 }
-.cabecera .menu ul li a:hover,.cabecera .menu ul li.active a{
+.cabecera .menu ul li .b:hover,.cabecera .menu ul li.active .b{
 	color: #fff;
-	box-shadow: 0 84px 0 rgb(0, 255, 153) inset;
+	box-shadow: 0 84px 0 rgb(0, 255, 160) inset;
 }
 
-input[type=text], select {
+input[type=text],input[type=password] , select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -56,23 +48,117 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-input[type=submit] {
-    width: 100%;
-    background-color: rgb(0, 255, 153);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: rgb(0, 255, 153);
-}
-
 div {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+table#tab1 {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table#tab1 th, td{
+    text-align: left;
+    padding: 8px;
+}
+
+table#tab1 tr:nth-child(even){background-color: white}
+
+table#tab1 th{
+    background-color: rgb(0, 36, 72);
+    color: white;
+}
+
+table#tab2 {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table#tab2 th, td{
+    text-align: left;
+    padding: 8px;
+}
+
+table#tab2 tr:nth-child(even){background-color: white}
+
+table#tab2 th{
+    background-color: rgb(0, 255, 153);;
+    color: white;
+}
+
+table#tabe {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table#tabe th, td{
+    text-align: left;
+    padding: 8px;
+}
+
+table#tabe tr:nth-child(even){background-color: white}
+
+table#tabe th{
+    background-color: rgb(0, 255, 153);
+    color: white;
+}
+
+input[type=submit] {
+    width: 100%;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    -webkit-appearance: default-button;
+    border-radius: 8px;
+    padding: 10px 0px;
+}
+
+input[type=submit] {
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(0, 255, 153);
+}
+
+input[type=submit]:hover {
+    background-color: rgb(0, 255, 153);
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.myButton {
+    width: 100%;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 0px;
+}
+
+.myButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(0, 36, 72);
+}
+
+.myButton:hover {
+    background-color: rgb(0, 36, 72);
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }

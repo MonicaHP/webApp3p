@@ -1,18 +1,36 @@
 $def with (form, results) 
 
-<h2 align="center"> Victimas de homicidio secuestro y extorsion </h2>
+<br>
+<section>
+    <div>
+        <h2 align="center"> Victimas de homicidio secuestro y extorsion </h2>
+    </div>
+</section>
 
-<form name="main" method="post" > 
+<br>
+
+<section>
+    <div align="center">
+    <form name="main" method="post" > 
     $if not form.valid: <p class="error">Información erronea</p>
-    $:form.render() 
+    $:form.render()
+    </div>
+    <br>
+    <div>
     <input type="submit" /> </form>
-    
-    <br> 
+    </div>
+</section>
+
+<br>
+
+<section>
+    <div>  
     $if results:
-        <table align="center">
-            <th align="center"> Entidad </th>
-            <th align="center"> Delito </th>
-            <th align="center"> Año </th>
+        <table id="tab1" align="center">
+            <th> Entidad </th>
+            <th> Delito </th>
+            <th> Año </th>
+
             $for row in results:
                 <tr>
                     <td>$row[0]</td>
@@ -20,3 +38,9 @@ $def with (form, results)
                     <td>$row[2]</td>
                 </tr>
         </table>
+    </div>
+</section>
+
+<br>
+<br>
+<br>

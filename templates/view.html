@@ -1,20 +1,24 @@
 $def with (post)
-<div class="row container">
-    
-    <section class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        
-        <section class="jumbotron">
-            <div class="container">
-                <h2>$post.pelicula</h2>
-            </div>   
-        </section>
-        
-        <div class="centraTabla table-responsive">
-            <a class="btn btn-primary btn-block" href="/viewdata">Regresar</a>
-                <br>
-            <table align="center" class="table table-bordered table-hover table-responsive">
-                <thead class="table-active">
-                    <tr class="active">
+
+<br>
+
+<section>
+    <div>
+        <h2>$post.pelicula</h2>
+    </div>   
+</section>
+
+<br>
+            <div>
+                <a class="myButton" href="/viewdata">Regresar</a>
+            </div>
+            
+            <br>
+
+        <div>
+            <table id=tab2 align=center >
+                <thead>
+                    <tr>
                         <th> </th>
                         <th>Pelicula</th>
                         <th>Pais</th>
@@ -38,5 +42,3 @@ $def with (post)
                 </tbody>
             </table>
         </div>
-    </section>
-</div> 
